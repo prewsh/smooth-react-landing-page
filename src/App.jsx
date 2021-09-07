@@ -2,11 +2,12 @@ import styled, { css } from "styled-components"
 import Feature from "./components/Feature";
 import Landing from "./components/Landing-area";
 import { Navbar } from "./components/Navbar"
+import Service from "./components/Service";
 
 
 const Container = styled.div`
   height: 100vh;
-  ${'' /* overflow: hidden; */}
+  overflow: hidden;
   position: relative;
 `;
 
@@ -31,6 +32,12 @@ const FeatureShape = styled.div`
   clip-path: polygon(0% 0%, 55% 0%, 33% 100%, 0% 100%);
 `;
 
+const ServiceShape = styled.div `
+  ${Shape}
+  background-color: pink;
+  clip-path: inset(0 67% 0 0);
+`
+
 const App = () => {
   return ( 
 <>
@@ -42,6 +49,10 @@ const App = () => {
   <Container>
     <Feature/>
     <FeatureShape/>
+  </Container>
+  <Container>
+    <Service/>
+    <ServiceShape/>
   </Container>
 </>  
   );
