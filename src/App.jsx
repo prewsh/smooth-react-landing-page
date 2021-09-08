@@ -34,7 +34,7 @@ const FeatureShape = styled.div`
 
 const ServiceShape = styled.div `
   ${Shape}
-  background-color: pink;
+  background-color: #f88497;
   clip-path: inset(0 67% 0 0);
 `
 
